@@ -56,7 +56,7 @@ switch numel(c0)
   case 1 %pix
     vc = cell2mat(pix2vec(nSide,c0,'nest',nest));
   case 2 %ang
-    vc = cell2mat(ang2vec(c0));
+    vc = cell2mat(ang2vec({c0}));
   case 3 %vec
     vc = c0/norm(c0);
 end
